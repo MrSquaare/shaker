@@ -1,0 +1,6 @@
+platform: 'system'
+language: 'go'
+
+tasks:
+  dev:
+    command: 'gow run main.go'

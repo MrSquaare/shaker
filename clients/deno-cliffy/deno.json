@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "start": "deno run main.ts",
+    "build": "deno compile main.ts",
+    "lint": "deno lint",
+    "format": "deno fmt"
+  }
+}

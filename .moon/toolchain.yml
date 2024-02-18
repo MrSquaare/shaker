@@ -1,0 +1,27 @@
+# https://moonrepo.dev/docs/config/toolchain
+$schema: 'https://moonrepo.dev/schemas/toolchain.json'
+
+node:
+  version: '20.11.1'
+  packageManager: 'pnpm'
+  pnpm:
+    version: '8.15.3'
+  addEnginesConstraint: true
+  dedupeOnLockfileChange: true
+  inferTasksFromScripts: true
+  syncProjectWorkspaceDependencies: true
+
+deno:
+  version: '1.40.5'
+
+bun:
+  version: '1.0.27'
+  syncProjectWorkspaceDependencies: true
+
+typescript:
+  createMissingConfig: true
+  includeProjectReferenceSources: true
+  includeSharedTypes: true
+  routeOutDirToCache: true
+  syncProjectReferences: true
+  syncProjectReferencesToPaths: true

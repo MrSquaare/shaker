@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "../../.moon/cache/types/servers/bun-hono",
+    "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx"
+  },
+  "exclude": ["node_modules"]
+}

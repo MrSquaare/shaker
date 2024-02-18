@@ -1,0 +1,20 @@
+<div class="flex items-center gap-4 rounded-xl border-2 border-red-500 p-4">
+  <iconify-icon
+    class="text-6xl font-bold text-red-500"
+    icon="simple-icons:angular"
+  />
+  <div>
+    <h1 class="text-2xl font-bold text-red-500">Hello, Angular!</h1>
+    <p><span class="font-bold">Hono value:</span> {{ value }}</p>
+    <p>
+      <span class="font-bold">Fiber value:</span>
+      @if (isError) {
+        Error
+      } @else if (!data) {
+        Loading...
+      } @else {
+        {{ data }}
+      }
+    </p>
+  </div>
+</div>

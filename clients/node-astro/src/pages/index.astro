@@ -1,0 +1,42 @@
+---
+import HelloAngularComponent from "../angular/components/hello-angular/hello-angular.component";
+import HelloAstro from "../components/HelloAstro.astro";
+import { HONO_BASE_URL } from "../constants/servers";
+import HelloReact from "../react/components/HelloReact";
+import HelloSvelte from "../svelte/components/HelloSvelte.svelte";
+import HelloVue from "../vue/components/HelloVue.vue";
+
+let data = "Loading";
+
+const fetchData = async () => {
+  try {
+    const res = await fetch(HONO_BASE_URL);
+
+    data = await res.text();
+  } catch {
+    data = "Error";
+  }
+};
+
+await fetchData();
+---
+
+<html lang="en">
+  <head>
+    <title>Shaker</title>
+    <script
+      src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="flex min-h-screen flex-col items-center justify-center gap-2 p-4"
+    >
+      <HelloAngularComponent client:load value={data} />
+      <HelloAstro value={data} />
+      <HelloReact client:load value={data} />
+      <HelloSvelte client:load value={data} />
+      <HelloVue client:load value={data} />
+    </div>
+  </body>
+</html>

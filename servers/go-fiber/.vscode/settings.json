@@ -1,0 +1,5 @@
+{
+  "go.alternateTools": {
+    "go": "/home/mrsquaare/.gvm/gos/go1.22.0/bin/go",
+  }
+}

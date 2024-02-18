@@ -1,0 +1,15 @@
+platform: 'deno'
+
+tasks:
+  dev:
+    command: 'deno task dev'
+  start:
+    command: 'deno task start'
+  build:
+    command: 'deno task build'
+  test:
+    command: 'deno task test'
+  lint:
+    command: 'deno task lint'
+  format:
+    command: 'deno task format'

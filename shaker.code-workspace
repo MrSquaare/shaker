@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "clients/deno-cliffy"
+    },
+    {
+      "path": "clients/node-astro"
+    },
+    {
+      "path": "servers/bun-hono"
+    },
+    {
+      "path": "servers/go-fiber"
+    }
+  ],
+  "settings": {
+    "moon.rootPrefixes": [
+      "./"
+    ],
+    "deno.enablePaths": [
+      "./clients/deno-cliffy",
+    ],
+    "angular.forceStrictTemplates": true,
+  }
+}

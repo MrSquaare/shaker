@@ -1,0 +1,8 @@
+# Inherit tasks from the `astro` preset
+# https://github.com/moonrepo/moon-configs
+tags: ["astro"]
+
+# Disable project references
+toolchain:
+  typescript:
+    syncProjectReferences: false
