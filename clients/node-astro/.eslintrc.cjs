@@ -43,6 +43,15 @@ module.exports = {
       },
     },
     {
+      files: ["src/**/*.svelte"],
+      extends: ["plugin:svelte/recommended"],
+      parser: "svelte-eslint-parser",
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        sourceType: "module",
+      },
+    },
+    {
       files: ["src/vue/**/*.{js,ts,vue}"],
       extends: [
         "plugin:vue/vue3-recommended",
