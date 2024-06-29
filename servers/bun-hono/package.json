@@ -8,7 +8,7 @@
     "format": "eslint --fix src/"
   },
   "dependencies": {
-    "hono": "^4.4.9"
+    "hono": "^4.2.7"
   },
   "devDependencies": {
     "@types/bun": "latest",
